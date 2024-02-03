@@ -63,7 +63,9 @@ img {
   display: block;
 }
 .section {
-  padding: 120px 0 120px 0;
+  /* padding: 120px 0 120px 0; */
+  padding: 28px 0 28px 0;
+  max-width: 1440px;
 }
 /* !HEADER */
 .header {
@@ -254,6 +256,9 @@ img {
   color: var(--navyblue);
   margin-bottom: 8px;
 }
+.card-list .title-three {
+  font-size: 20px;
+}
 .inside-text {
   font-size: 16px;
   line-height: 1.5;
@@ -273,13 +278,20 @@ img {
   text-align: center;
   text-transform: capitalize;
   margin-bottom: 72px;
+  margin-top: 96px;
 }
 .card-list {
-  display: flex;
+  /* display: flex; */
   gap: 24px;
+  /* column-gap: 72px; */
 }
 .card-item {
-  width: calc((100% - 3 * 24px) / 4);
+  /* width: calc((100% - 3 * 24px) / 4); */
+  /* не уверен */
+  margin: 0 auto;
+  margin-bottom: 72px;
+
+  width: 264px;
   border-radius: 0 0 4px 4px;
 }
 .name-item {
@@ -707,6 +719,7 @@ img {
   .container {
     max-width: 768px;
   }
+
   .hero-section {
     max-width: 768px;
     max-height: 436px;
@@ -740,6 +753,30 @@ img {
   .advantage-item {
     width: calc((100% - 24px) / 2);
   }
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card-item {
+    width: 264px;
+    row-gap: 24px;
+  }
+  .card-list {
+    display: flex;
+    /* gap: 24px; */
+  }
+  .section {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  .container .section {
+    max-width: 768px;
+  }
+  .card-list .title-three {
+    /* font-size: 20px; */
+    text-align: center;
+  }
 }
 
 /* !--------------------------------1158  */
@@ -768,5 +805,11 @@ img {
   }
   .title-three {
     font-size: 20px;
+  }
+  .section {
+    max-width: 1440px;
+  }
+  .title-two {
+    margin-top: 120px;
   }
 }
