@@ -149,7 +149,7 @@ img {
   letter-spacing: 0.02em;
 }
 .address-list {
-  display: flex;
+  /* display: flex; */
   gap: 40px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -711,12 +711,30 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
+.burger {
+  position: relative;
+  /* нихера не понятно как работает */
+  /* padding-top: 16px;
+  padding-right: 136px;
+  padding-bottom: 16px; */
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
 /* ! */
 @media (max-width: 1157px) {
   .advantage-icon {
     display: none;
   }
 }
+
+/* ! мобильный */
 @media (max-width: 767px) {
   .footer-text-container {
     width: 288px;
@@ -741,6 +759,26 @@ img {
   }
   .subscribe-button {
     margin-top: 16px;
+  }
+  .navigation-list,
+  .address-list {
+    display: none;
+  }
+  .container {
+    max-width: 320px;
+  }
+  .header {
+    width: 100%;
+  }
+  .header .container {
+    padding-left: 0;
+    /* padding-bottom: 16px;
+    padding-top: 16px; */
+  }
+  .full-logo {
+    padding-left: 16px;
+    padding-bottom: 16px;
+    padding-top: 16px;
   }
 }
 
@@ -825,6 +863,9 @@ img {
   .subscribe-button {
     display: flex;
   }
+  .burger {
+    display: none;
+  }
 }
 @media (min-width: 768px) and (max-width: 1157px) {
   .wrapper {
@@ -882,5 +923,8 @@ img {
   }
   .footer-text-container {
     margin-right: 120px;
+  }
+  .address-list {
+    display: flex;
   }
 }
