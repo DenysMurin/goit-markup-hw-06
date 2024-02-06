@@ -511,7 +511,8 @@ img {
   fill: var(--white);
 }
 /* !modal */
-.backdrop {
+.backdrop,
+.backdrop-m {
   position: fixed;
   inset: 0;
   display: flex;
@@ -553,7 +554,8 @@ img {
   transform: scale(0);
 }
 /* upper close button */
-.modal-close {
+.modal-close,
+.mobile-close {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -824,6 +826,12 @@ img {
   .mobile-address-text {
     padding-bottom: 24px;
   }
+  .mobile-address a {
+    color: var(--slate);
+  }
+  .mobile-address a:active {
+    color: var(--iris);
+  }
 }
 
 /* !--------------------------------768  */
@@ -908,6 +916,9 @@ img {
     display: flex;
   }
   .burger {
+    display: none;
+  }
+  .backdrop-m {
     display: none;
   }
 }
