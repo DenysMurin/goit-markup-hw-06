@@ -338,7 +338,7 @@ img {
 
 /* OUR PORTFOLIO */
 .portfolio-list {
-  display: flex;
+  /* display: flex; */
   gap: 24px;
   flex-wrap: wrap;
   column-gap: 24px;
@@ -347,6 +347,7 @@ img {
 
 .portfolio-item {
   width: calc((100% - 48px) / 3);
+  width: 288px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item:hover {
@@ -777,6 +778,11 @@ img {
     /* padding-bottom: 16px;
     padding-top: 16px; */
   }
+  .portfolio-name .title-three {
+    font-size: 20px;
+    text-align: left;
+  }
+
   .full-logo {
     padding-left: 16px;
     padding-bottom: 16px;
@@ -832,6 +838,12 @@ img {
   .mobile-address a:active {
     color: var(--iris);
   }
+  .card-socials-list-m {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 40px;
+  }
 }
 
 /* !--------------------------------768  */
@@ -848,7 +860,8 @@ img {
   .hero-actions {
     margin: 36px auto 0;
   }
-  .advantage-list {
+  .advantage-list,
+  .portfolio-list {
     display: flex;
     flex-wrap: wrap;
   }
@@ -870,7 +883,8 @@ img {
   .title-three {
     text-align: left;
   }
-  .advantage-item {
+  .advantage-item,
+  .portfolio-item {
     width: calc((100% - 24px) / 2);
   }
   .card-list {
@@ -920,6 +934,10 @@ img {
   }
   .backdrop-m {
     display: none;
+  }
+  .portfolio-name .title-three {
+    font-size: 20px;
+    text-align: left;
   }
 }
 @media (min-width: 768px) and (max-width: 1157px) {
@@ -977,6 +995,9 @@ img {
   }
   .advantage-item {
     width: calc((100% - 72px) / 4);
+  }
+  .portfolio-item {
+    width: calc((100% - 72px) / 3);
   }
   .title-three {
     font-size: 20px;
